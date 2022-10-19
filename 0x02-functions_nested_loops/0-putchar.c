@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints the string "_putchar" from a character array.
@@ -7,12 +8,6 @@
 
 int main(void)
 {
-	char p[] = "_putchar";
-	int i;
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(p[i]);
-	}
-	_putchar("\n");
+	_putchar("_putchar");
 	return (0);
 }
