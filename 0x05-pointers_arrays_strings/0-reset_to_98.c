@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 /**
-* 0-reset_to_98 - update the value it points to
+* reset_to_98 - update the value it points to
 * Return: none
+* @a: A pointer to an int that will be updated
 */
 
 void reset_to_98(int *n)
 {
-	n = 98;	
+	*n = 98;
 }
