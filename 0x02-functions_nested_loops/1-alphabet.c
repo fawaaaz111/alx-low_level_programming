@@ -9,7 +9,7 @@ void print_alphabet(void)
 {
 	char cont = 'a'; /* counter for control the process */
 
-	while (cont != 'z')
+	while (cont != ('z' + 1))
 	{
 		_putchar(cont);
 		cont++;
