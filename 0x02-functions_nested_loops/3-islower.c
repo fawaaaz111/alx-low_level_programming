@@ -14,9 +14,9 @@ int _islower(int c)
 	for (cont = 'a'; cont <= 'z'; cont++)
 	{
 		if (input == cont)
-			return (res = 1);
+			res = 1;
 		else
-			return (res = 0);
+			res = 0;
 	}
 	return (res);
 }
