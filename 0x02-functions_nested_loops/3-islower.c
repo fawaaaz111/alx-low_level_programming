@@ -10,7 +10,7 @@
 int _islower(int c)
 {
 	int res;
-	char input = 'c', cont;
+	char input = c, cont;
 
 	for (cont = 'a'; cont <= 'z'; cont++)
 	{
