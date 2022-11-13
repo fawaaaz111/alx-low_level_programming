@@ -9,14 +9,15 @@
 
 int _islower(int c)
 {
-	int input = c, cont, res;
+	int input = c, res;
+	char cont;
 
 	for (cont = 'a'; cont <= 'z'; cont++)
 	{
 		if (input == cont)
-			res = 0;
-		else
 			res = 1;
+		else
+			res = 0;
 	}
 	return (res);
 }
