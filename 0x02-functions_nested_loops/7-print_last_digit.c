@@ -13,11 +13,15 @@ int print_last_digit(int c)
 	{
 		c %= 10;
 		_putchar(c + '0');
+		/**
+		* the output c is a digit value 'like an ascii' ,
+		* so it should be converted to character
+		*/
 
 		return (c);
 	}
 	else
-	{	
+	{
 		c %= 10;
 		c = c * -1;
 		_putchar(c + '0');
