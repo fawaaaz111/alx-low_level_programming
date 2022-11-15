@@ -18,8 +18,10 @@ int print_last_digit(int c)
 	}
 	else
 	{
-		c *= -1;
+		c = -c;
 		c %= 10;
-		return (c + '0');
+		_putchar(c + '0');
+
+		return (c);
 	}
 }
