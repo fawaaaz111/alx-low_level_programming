@@ -8,11 +8,11 @@
 
 void times_table(void)
 {
-	int con, time; /** counter for repeatition and time */
+	int con, time, res; /** counter for repeatition and time */
 
 	for (con = 0; con <= 9; con++)
 	{
-		for (time = 0 time <= 9; time++)
+		for (time = 0; time <= 9; time++)
 		{
 			res = con * time;
 			_putchar(res + '0');
