@@ -9,13 +9,13 @@
 void times_table(void)
 {
 	int con, time, res; /** counter for repeatition and time */
+	int first, second;
 
 	for (con = 0; con <= 9; con++)
 	{
 		for (time = 0; time <= 9; time++)
 		{
 			res = con * time;
-			int first, second;
 
 			first = res / 10;
 			second = res % 10;
