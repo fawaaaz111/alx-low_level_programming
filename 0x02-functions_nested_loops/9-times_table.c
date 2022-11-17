@@ -15,11 +15,20 @@ void times_table(void)
 		for (time = 0; time <= 9; time++)
 		{
 			res = con * time;
-			int first = res / 10;
-			int second = res % 10;
+			int first, second;
 
-			_putchar(first + '0');
-			_putchar(second + '0');
+			first = res / 10;
+			second = res % 10;
+
+			if (first != 0)
+			{
+				_putchar(first + '0');
+				_putchar(second + '0');
+			}
+			else
+			{
+				_putchar(second + '0');
+			}
 
 			if (time != 9)
 			{
