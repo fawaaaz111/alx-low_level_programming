@@ -15,7 +15,11 @@ void times_table(void)
 		for (time = 0; time <= 9; time++)
 		{
 			res = con * time;
-			_putchar(res + '0');
+			int first = res / 10;
+			int second = res % 10;
+
+			_putchar(first + '0');
+			_putchar(second + '0');
 
 			if (time != 9)
 			{
