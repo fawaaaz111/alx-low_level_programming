@@ -22,11 +22,6 @@ void times_table(void)
 
 			if (first != 0)
 			{
-				if (second != 0)
-				{
-					_putchar(' ');
-				}
-				
 				_putchar(first + '0');
 				_putchar(second + '0');
 			}
