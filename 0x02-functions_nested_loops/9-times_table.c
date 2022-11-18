@@ -28,14 +28,19 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(' ');
-				_putchar(' ');
+				if (time != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+
 				_putchar(second + '0');
 			}
-		if (time != 9)
-		{
-			_putchar(',');
-		}
+
+			if (time != 9)
+			{
+				_putchar(',');
+			}
 		}
 	_putchar('\n');
 	}
