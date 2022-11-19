@@ -10,15 +10,25 @@
 
 void print_to_98(int n)
 {
-	int cnt, cond; /* counter hold n argument */
+	int cnt; /* counter hold n argument */
 
-	cond = n >= 98;
-	cnt = n;
-	do {
-		printf("%d", cnt);
-		if (cnt != 98)
-			printf(", ");
-		cond ? cnt-- : cnt++;
-	} while (cnt != 98);
+	if (n <= 98)
+	{
+		for (cnt = n ; cnt <= 98 ; cnt++)
+		{
+			printf("%d", cnt);
+			if (cnt != 98)
+				printf(", ");
+		}
+	}
+	else
+	{
+		for (cnt = n ; cnt >= 98; cnt--)
+		{
+			printf("%d", cnt);
+			if (cnt != 98)
+				printf(", ");
+		}
+	}
 	putchar('\n');
 }
