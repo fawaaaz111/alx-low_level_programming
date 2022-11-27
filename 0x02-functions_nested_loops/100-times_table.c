@@ -24,31 +24,30 @@ void print_times_table(int n)
 				fir = number / 10;
 				sec = number % 10;
 
-				if (time != n)
+				if (fir != 0)
 				{
-					_putchar(',');
-					if (fir != 0)
-					{
-						_putchar(' ');
-						_putchar(' ');
-					}
-					else
-					{
-
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
-					}
+					_putchar(' ');
+					_putchar(' ');
 					_putchar(fir + '0');
 					_putchar(sec + '0');
 				}
 				else
 				{
-					_putchar(fir + '0');
-					_putchar (sec + '0');
-				}
+					if (time != 0)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+					}
 
+					_putchar(sec + '0');
+				}
+				if (time != n)
+				{
+					_putchar (',');
+				}
 			}
+		_putchar('\n');
 		}
 	}
 }
