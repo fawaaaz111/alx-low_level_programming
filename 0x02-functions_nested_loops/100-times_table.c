@@ -9,14 +9,14 @@
 
 void print_times_table(int n)
 {
-	if !(n < 0 || n > 15)
+	if (!(n < 0 || n > 15))
 	{
 		int con, time; /* initilaize row counter,and time number */
 		int number, fir, sec;
 
 		con = n;
 
-		for (con 0 ; con <= n ; con++)
+		for (con = 0 ; con <= n ; con++)
 		{
 			for (time = 0 ; time <= n ; time++)
 			{
@@ -26,7 +26,7 @@ void print_times_table(int n)
 
 				if (time != n)
 				{
-					_putcahr(',');
+					_putchar(',');
 					if (fir != 0)
 					{
 						_putchar(' ');
