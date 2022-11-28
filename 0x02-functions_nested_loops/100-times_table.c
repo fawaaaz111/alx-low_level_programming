@@ -12,7 +12,6 @@ void print_times_table(int n)
 	if (!(n < 0 || n > 15))
 	{
 		int con, time; /* initilaize row counter,and time number */
-		int number, fir, sec, mid;
 		/**
 					      * mid is the middle if 3 digi
 					      * number
