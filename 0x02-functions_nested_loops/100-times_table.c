@@ -23,7 +23,7 @@ void print_times_table(int n)
 		{
 			for (time = 0 ; time <= n ; time++)
 			{
-				print_number(con, time);
+				print_number(con, time, n);
 			}
 		_putchar('\n');
 		}
