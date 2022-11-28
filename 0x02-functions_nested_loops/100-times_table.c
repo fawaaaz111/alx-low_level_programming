@@ -12,7 +12,10 @@ void print_times_table(int n)
 	if (!(n < 0 || n > 15))
 	{
 		int con, time; /* initilaize row counter,and time number */
-		int number, fir, sec;
+		int number, fir, sec, mid; /** 
+					      * mid is the middle if 3 digi
+					      * number 
+					      */
 
 		con = n;
 
@@ -20,32 +23,7 @@ void print_times_table(int n)
 		{
 			for (time = 0 ; time <= n ; time++)
 			{
-				number = con * time;
-				fir = number / 10;
-				sec = number % 10;
-
-				if (fir != 0)
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(fir + '0');
-					_putchar(sec + '0');
-				}
-				else
-				{
-					if (time != 0)
-					{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
-					}
-
-					_putchar(sec + '0');
-				}
-				if (time != n)
-				{
-					_putchar (',');
-				}
+				print_number(con , time);
 			}
 		_putchar('\n');
 		}
