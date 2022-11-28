@@ -41,13 +41,13 @@ void print_times_table(int n)
 void print_number(int con, int time, int n)
 {
 	int number = con * time;
-	int fir, sec, length;
+	int fir, sec, length, num = number;
 
 	length = 0;
 	do {
 		++length;
-		number /= 10;
-	} while (number);
+		numb /= 10;
+	} while (numb);
 		fir = number / 10;
 		sec = number % 10;
 
