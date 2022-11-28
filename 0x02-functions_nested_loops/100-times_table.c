@@ -37,7 +37,7 @@ void print_times_table(int n)
   * Return: none
  */
 
-void print_number(int con, int time)
+void print_number(int con, int time, int n)
 {
 	int number = con * time;
 	int fir, sec;
@@ -62,7 +62,8 @@ void print_number(int con, int time)
 		}
 	_putchar(sec + '0');
 	}
-	if (time != 0)
+
+	if (time != n)
 	{
 		_putchar (',');
 	}
