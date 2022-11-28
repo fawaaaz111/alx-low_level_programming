@@ -34,37 +34,49 @@ void print_times_table(int n)
   * print_number - print the number of 2 or 3 digits
   * @con: the row counter
   * @time: number of time to multiply
+  * @n: the number to get time table from
   * Return: none
  */
 
 void print_number(int con, int time, int n)
 {
 	int number = con * time;
-	int fir, sec;
+	int fir, sec, length;
 
-	fir = number / 10;
-	sec = number % 10;
+	length = 0;
+	do {
+		++length;
+		number /= 10;
+	} while (number);
+		fir = number / 10;
+		sec = number % 10;
 
-	if (fir != 0)
-	{
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(fir + '0');
-		_putchar(sec + '0');
-	}
-	else
-	{
-		if (time != 0)
+		if (fir != 0)
 		{
 			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-		}
-	_putchar(sec + '0');
-	}
+			if (length > 2)
+			{
+				int mid = (number / 10) % 10;
 
-	if (time != n)
-	{
-		_putchar (',');
-	}
+				_putchar(fir + '0');
+				_putchar(mid + '0');
+				_putchar(sec + '0');
+			}
+			_putchar(' ');
+			_putchar(fir + '0');
+			_putchar(sec + '0');
+		}
+		else
+		{
+			if (time != 0)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+			}
+		_putchar(sec + '0');
+		}
+
+		if (time != n)
+			_putchar (',');
 }
