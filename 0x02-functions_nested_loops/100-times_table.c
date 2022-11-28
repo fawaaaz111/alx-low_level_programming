@@ -46,8 +46,8 @@ void print_number(int con, int time, int n)
 	length = 0;
 	do {
 		++length;
-		numb /= 10;
-	} while (numb);
+		num /= 10;
+	} while (num);
 		fir = number / 10;
 		sec = number % 10;
 
