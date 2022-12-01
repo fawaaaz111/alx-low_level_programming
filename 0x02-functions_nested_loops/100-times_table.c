@@ -58,15 +58,17 @@ void print_number(int con, int time, int n)
 			{
 				int mid = (number / 10) % 10;
 
-				_putchar(fir + '0');
+				_putchar((fir / 10) + '0');
 				_putchar(mid + '0');
 				_putchar(sec + '0');
 			}
-			_putchar(' ');
-			_putchar(fir + '0');
-			_putchar(sec + '0');
-		}
-		else
+			else
+			{
+				_putchar(' ');
+				_putchar(fir + '0');
+				_putchar(sec + '0');
+			}
+		} else
 		{
 			if (time != 0)
 			{
@@ -76,7 +78,6 @@ void print_number(int con, int time, int n)
 			}
 		_putchar(sec + '0');
 		}
-
 		if (time != n)
 			_putchar (',');
 }
