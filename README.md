@@ -13,4 +13,4 @@ Module of **low-level programming** and **Algorithm**, carried out during **Full
 | [`0x01-variables_if_else_while`](https://github.com/fawaaaz111/alx-low_level_programming/tree/master/0x01-variables_if_else_while)| It aims to learn about arithmetic operators, relational operators, boolean operators, comments, declaring variables and loops in **C language**. |
 | [`0x02-functions_nested_loops`](https://github.com/fawaaaz111/alx-low_level_programming/tree/master/0x02-functions_nested_loops) | It aims to learn about header files, functions, loops and nested loops in **C language**.|
 | [`0x03-debugging`] (https://github.com/fawaaaz111/alx-low_level_programming/tree/master/0x03-debugging) | It aims to learn how to debug in **C language**. |
-| [`0x05-pointers_arrays_strings`] (https://github.com/fawaaaz111/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings) | It aims to learn about pointers and arrays in **C language**. |
+| [`0x05-pointers_arrays_strings`] (https://github.com/fawaaaz111/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings) | It aims to learn about pointers and arrays in **C language**.|
