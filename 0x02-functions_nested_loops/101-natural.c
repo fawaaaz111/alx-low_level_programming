@@ -4,10 +4,10 @@
   * main - computes and prints multiples
   * of 3 or 5
   *
-  * Return: None
+  * Return: 0 on success
   */
 
-void main(void)
+int main(void)
 {
 	int i = 1, sum = 0;
 
@@ -18,4 +18,5 @@ void main(void)
 		i++;
 	}
 	printf("the sum is %d\n", sum);
+	return (0);
 }
