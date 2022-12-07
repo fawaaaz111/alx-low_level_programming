@@ -8,8 +8,9 @@
 
 int main(void)
 {
-	int i, num; /* counter i and the number */
-	int pre = 2, n_pre = 1; /* previous and next previous number */
+	int i; /* counter i and the number */
+	long int pre = 2, n_pre = 1, num;
+	/* previous and next previous number */
 
 	i = 1;
 	while (i <= 50)
@@ -17,12 +18,12 @@ int main(void)
 		if (i == 1 || i == 2)
 		{
 			num = i;
-			printf("%d, ", num);
+			printf("%ld, ", num);
 		}
 		else
 		{
 			num = pre + n_pre;
-			printf("%d", num);
+			printf("%ld", num);
 			if (i != 50)
 			{
 				putchar(',');
