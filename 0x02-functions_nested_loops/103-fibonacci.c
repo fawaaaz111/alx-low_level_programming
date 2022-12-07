@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i; /* counter i of the numbers */
-	long int pre = 2, n_pre = 1, num, sum;
+	long int pre = 2, n_pre = 1, num, sum = 0;
 	/* previous and next previous number */
 
 	i = 1;
