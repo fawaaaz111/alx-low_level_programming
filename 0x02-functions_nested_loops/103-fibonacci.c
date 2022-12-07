@@ -43,6 +43,6 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%ld\n", sum);
+	printf("%ld\n", sum - 2);
 	return (0);
 }
