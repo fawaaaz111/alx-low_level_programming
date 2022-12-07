@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i; /* counter i of the numbers */
-	long int pre = 2, n_pre = 1, num, sum = 0;
+	long int pre = 2, n_pre = 1, num = 0, sum = 0;
 	/* previous and next previous number */
 
 	i = 1;
@@ -28,9 +28,9 @@ int main(void)
 
 		if (num <= 4000000)
 		{
-			if (num % 2 == 0)
+			if ((pre % 2) == 0)
 			{
-				sum += num;
+				sum += pre;
 			}
 			else
 			{
