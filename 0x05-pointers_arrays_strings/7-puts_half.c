@@ -17,7 +17,7 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	/* if len is odd , consider the half from length -1 */
+	/* if len is odd , consider the half + 1 */
 	if (len % 2 == 0)
 		spt = len / 2;
 	else
