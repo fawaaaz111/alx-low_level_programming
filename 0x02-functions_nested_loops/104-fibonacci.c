@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i; /* counter */
-	long int pre = 2, n_pre = 1, num;
+	unsigned long int pre = 2, n_pre = 1, num;
 	/* previous and next previous number */
 
 	printf("%ld, %ld", n_pre, pre);
