@@ -22,6 +22,8 @@ int _atoi(char *s)
 			}
 			opt += _putchar(s[i]);
 		}
+		else
+			continue;
 		i++;
 	}
 	return (opt);
