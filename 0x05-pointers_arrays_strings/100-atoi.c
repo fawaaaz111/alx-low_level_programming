@@ -11,7 +11,8 @@ int _atoi(char *s)
 {
 	int i, opt = 0; /* counter for loop and the output */
 
-	for (i = 0; s[i] != '\0'; i++)
+	i = 0;
+	while (s[i] != '\0')
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
@@ -21,6 +22,7 @@ int _atoi(char *s)
 			}
 			opt += _putchar(s[i]);
 		}
+		i++;
 	}
 	return (opt);
 }
