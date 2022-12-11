@@ -22,8 +22,6 @@ int _atoi(char *s)
 			}
 			opt = opt * 10 + (s[i] - '0');
 		}
-		else
-			continue;
 		i++;
 	}
 	return (opt);
