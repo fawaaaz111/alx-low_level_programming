@@ -19,7 +19,7 @@ int _atoi(char *s)
 			{
 				opt += _putchar(s[i - 1]);
 			}
-			opt += _putchar(s[i - 1]);
+			opt += _putchar(s[i]);
 		}
 	}
 	return (opt);
