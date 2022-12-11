@@ -20,7 +20,7 @@ int _atoi(char *s)
 			{
 				opt += _putchar(s[i - 1]);
 			}
-			opt += (s[i] - '0');
+			opt = opt * 10 + (s[i] - '0');
 		}
 		else
 			continue;
