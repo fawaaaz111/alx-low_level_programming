@@ -37,5 +37,5 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	return (opt + sign);
+	return (opt * sign);
 }
