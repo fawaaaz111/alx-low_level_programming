@@ -16,11 +16,9 @@ int _atoi(char *s)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 			break;
-		else
-		{
-			if (s[i] == '-')
-				sign_count++;
-		}
+
+		if (s[i] == '-')
+			sign_count++;
 		if ((sign_count % 2) != 0)
 			sign = -1;
 	}
