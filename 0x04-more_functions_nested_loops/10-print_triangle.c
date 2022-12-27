@@ -9,19 +9,24 @@
 
 void print_triangle(int size)
 {
-	int i, j; /* cuonter for lines and shapes */
-
-	i = 0;
-	while (i < size)
+	if (size > 0)
 	{
-		for (j = 1 ; j <= size ; j++)
+		int i, j; /* cuonter for lines and shapes */
+
+		i = 0;
+		while (i < size)
 		{
-			if (j < size - i)
-				putchar(' ');
-			else
-				putchar('#');
+			for (j = 1 ; j <= size ; j++)
+			{
+				if (j < size - i)
+					putchar(' ');
+				else
+					putchar('#');
+			}
+			i++;
+			putchar('\n');
 		}
-		i++;
-		putchar('\n');
 	}
+	else
+		putchar('\n');
 }
