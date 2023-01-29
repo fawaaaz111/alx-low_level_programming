@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_
-#define _HOLBERTON_
+#ifndef _MAIN
+#define _MAIN
 
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
