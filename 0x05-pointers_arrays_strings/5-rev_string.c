@@ -1,47 +1,30 @@
 #include "main.h"
 
 /**
-<<<<<<< HEAD
-  * rev_string - reverse a string
-  * @s: the input string
-  *
-  * Return: Void
-=======
-  * rev_string - get the reverse of a string
-  * @s: th input string
-  *
-  * Return: None
->>>>>>> 067bd955de35f91e5965a6ec2d9bdca4091a6ffb
-  */
-
+ * rev_string - reverses a string.
+ * @s: input string.
+ * Return: no return.
+ */
 void rev_string(char *s)
 {
-<<<<<<< HEAD
-	int len = 0;
-	char *reverse;
+	int count = 0, i, j;
+	char *str, temp;
 
-	while (s[len] != '\0');
-=======
-	int len = 0, i;
-	char temp;
-
-	while (s[len] != '\0')
->>>>>>> 067bd955de35f91e5965a6ec2d9bdca4091a6ffb
+	while (count >= 0)
 	{
-		len++;
+		if (s[count] == '\0')
+			break;
+		count++;
 	}
+	str = s;
 
-<<<<<<< HEAD
-	for(len-- ; len >= 0 ; len--)
+	for (i = 0; i < (count - 1); i++)
 	{
-		reverse = _putchar(s[len]);
-=======
-	for (i = 0 ; i < len / 2 ; i++)
-	{
-		/* temp var uses to temporary holds the string */
-		temp = *(s + i);
-		*(s + i) = *(s + (len - 1 - i));
-		*(s + (len - 1 - i)) = temp;
->>>>>>> 067bd955de35f91e5965a6ec2d9bdca4091a6ffb
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(str + j);
+			*(str + j) = *(str + (j - 1));
+			*(str + (j - 1)) = temp;
+		}
 	}
 }
