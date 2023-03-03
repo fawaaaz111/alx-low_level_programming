@@ -16,7 +16,7 @@ char *string_toupper(char *c)
 	{
 /* if any character is lower on ascci code then add 32 to convert it to upper*/
 		if (c[i] > 96 && c[i] < 123)
-			c[i] += 32;
+			c[i] -= 32;
 		i++;
 	}
 	return (c);
