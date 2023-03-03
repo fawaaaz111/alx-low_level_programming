@@ -22,7 +22,7 @@ char *cap_string(char *s)
 		{
 			if (*(s + count) == sep_words[i])
 			{
-		/* if current letter is seperator check next letter , if lower flip to it upper */
+/* if current letter is seperator check next letter, if lower flip to upper */
 				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
 					*(s + (count + 1)) = *(s + (count + 1)) - 32;
 				break;
