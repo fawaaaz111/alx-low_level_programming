@@ -12,7 +12,7 @@ int main(void)
     char *p;
 
     p = leet(s);
-    printf("%s", p);
-    printf("%s", s);
+    printf("%s\n", p);
+    printf("%s\n", s);
     return (0);
 }
