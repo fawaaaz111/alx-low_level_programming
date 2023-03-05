@@ -12,11 +12,11 @@ char *leet(char *n)
 	int incodes[] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
 	char letters[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
-	int cnt = 0;
+	int cnt = 0, i;
 
 	while (n[cnt] != '\0')
 	{
-		for (int i = 0; i < 10; i++)
+		for (i = 0; i < 10; i++)
 		{
 			if (n[cnt] == letters[i])
 			{
