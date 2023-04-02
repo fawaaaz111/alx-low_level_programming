@@ -10,4 +10,6 @@ list_t *add_node(list_t **head, const char *str)
 	current->len = strlen(str);
 	current->next = *head;
 	*head = current;
+
+	return (current);
 }
