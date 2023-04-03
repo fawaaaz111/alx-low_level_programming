@@ -27,7 +27,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		/* traverse the media to reach end of list*/
 		while (temp->next != NULL)
 			temp = temp->next;
-	
+
 		/* assign last node next pointer to new node*/
 		temp->next = cur;
 	}
