@@ -8,11 +8,14 @@
 
 void free_list(list_t *head)
 {
-	/*base case: stop when reaching end of list*/
-	if (head == NULL)
-		return;
+	list_t *next, *crnt = head;
 
-	/*recursive mode: recall with (next) as new head*/
-	free_list(head->next);
-	free(head);
+	while (crnt != NULL)
+	{
+		next = crnt->next;
+		free(crnt->str);
+		free(crnt);
+		crnt = next;	
+	}
+	head = NULL;
 }
