@@ -34,8 +34,7 @@ void error_handler(int fd_r, int fd_w, char *argv[])
 
 int main(int argc, char *argv[])
 {
-	int fd_r, fd_w, read_b;
-	size_t len = 1024;
+	size_t fd_r, fd_w, write_b, read_b, len = 1024;
 	char buf[1024];
 
 	if (argc != 3)
@@ -52,18 +51,20 @@ int main(int argc, char *argv[])
 	error_handler(fd_r, fd_w, argv);
 
 	while ((read_b = read(fd_r, buf, len)) > 0)
-		write(fd_w, buf, len);
+		write_b = write(fd_w, buf, read_b);
 
+	/*handl error at reading or writing*/
+	error_handler(read_b, write_b, argv);
 
 	if (close(fd_r) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_r);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %lu\n", fd_r);
 		exit(100);
 	}
 
 	if (close(fd_w) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %lu\n", fd_w);
 		exit(100);
 	}
 	return (0);
