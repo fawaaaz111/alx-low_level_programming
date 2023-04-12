@@ -55,13 +55,13 @@ int main(int argc, char *argv[])
 		write(fd_w, buf, len);
 
 
-	if (!close(fd_r))
+	if (close(fd_r) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_r);
 		exit(100);
 	}
 
-	if (!close(fd_w))
+	if (close(fd_w) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
 		exit(100);
